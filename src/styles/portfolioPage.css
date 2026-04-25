@@ -1,0 +1,154 @@
+.portfolio-page {
+  background: #ffffff;
+  min-height: 80vh;
+  padding: 60px 5%;
+}
+
+.portfolio-page-title {
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #9333EA;
+  margin-bottom: 40px;
+}
+
+/* ── Top Service Cards ────────────────────────────── */
+.portfolio-services-wrapper {
+  background: #F9FAFB;
+  border-radius: 20px;
+  padding: 32px 28px;
+  margin-bottom: 48px;
+}
+
+.portfolio-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ── Category Sections ───────────────────────────── */
+.portfolio-category {
+  margin-bottom: 48px;
+}
+
+.portfolio-category-title {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #9333EA;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.portfolio-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.portfolio-project-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.portfolio-project-card:hover {
+  transform: translateY(-4px);
+}
+
+.portfolio-project-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.portfolio-project-title {
+  color: #9333EA;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.portfolio-project-desc {
+  color: #6B7280;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .portfolio-page {
+    padding: 40px 5%;
+  }
+
+  .portfolio-services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .portfolio-category-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-page {
+    padding: 32px 4%;
+  }
+
+  .portfolio-page-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .portfolio-services-wrapper {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .portfolio-services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .portfolio-category-title {
+    font-size: 18px;
+  }
+
+  .portfolio-category-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .portfolio-project-card {
+    padding: 16px;
+  }
+
+  .portfolio-project-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .portfolio-project-title {
+    font-size: 13px;
+  }
+
+  .portfolio-project-desc {
+    font-size: 11px;
+  }
+}
