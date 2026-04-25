@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://work-with-prajjwal.github.io/devbros-app",
+  "homepage": "https://work-withprajjwal.github.io/Devbros",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
